@@ -1,4 +1,7 @@
 import sys
+# lesson : 
+# 1. boolcount의 사용 (loop 진행하면서 조건 변화를 파악해야 할때)
+# 2. 목표의 반대인 것을 찾을때가 더 쉬울 수 있다.
 
 num = int(input())
 count = 0 # group word가 아닌 word 수를 count
