@@ -1,9 +1,8 @@
 # Process Scheduling에서 Shortest-remaining-time-first 방식과 Round-Robin 방식 구현
-
-print("|| Process Number >>  ",end="")
-N = int(input()) # process 개수
 print("|| Scheduling Type (SR, RR) >>  ",end="")
 Type = input()
+print("|| Process Number >>  ",end="")
+N = int(input()) # process 개수
 
 GantChart = []
 if Type == "SR":
