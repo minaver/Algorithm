@@ -7,15 +7,26 @@ def isSosu(num):  # num이 소수인지 확인하는 함수
 
 T = int(input())
 
+sosu = []
+for j in range(2,10000):
+  if isSosu(j) == True:
+    sosu.append(j)
+
 for i in range(T):
   n = int(input())
 
-  sosu = []
-  for num in range(2,n):
-    if isSosu(num) == True:
-      sosu.append(num)
+  result = [0,0]
+  s = sosu[0]
+  p = 1
+  while s <= n/2:
+    other_num = n - s
+    if sosu.count(other_num) == 1:
+      result[0] = s
+      result[1] = other_num
+    s = sosu[p]
+    p += 1
+  
+  print(result[0],result[1])
 
-  for ss in sosu:
-    other_ss = n - ss
-    if sosu.index(other_ss) != 0:
       
+
