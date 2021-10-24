@@ -8,6 +8,7 @@ def isSosu(num):  # num이 소수인지 확인하는 함수
 T = int(input())
 
 sosu = []
+
 for j in range(2,10000):
   if isSosu(j) == True:
     sosu.append(j)
