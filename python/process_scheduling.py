@@ -1,11 +1,11 @@
 # Process Scheduling에서 Shortest-remaining-time-first 방식과 Round-Robin 방식 구현
-print("|| Scheduling Type (SR, RR) >>  ",end="")
+print("|| Scheduling Type (0:SR, 1:RR) >>  ",end="")
 Type = input()
 print("|| Process Number >>  ",end="")
 N = int(input()) # process 개수
 
 GantChart = []
-if Type == "SR":
+if Type == "0":
   print("|| Arrival Time(start from 0) >>  ",end="")
   Atime = list(map(int,input().split()))  # Arrival Time
   print("|| Burst Time(start from 0) >> ",end="")
