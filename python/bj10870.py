@@ -11,7 +11,6 @@ def pivo(n):
   
 
 n = int(input())
-
 p = pivo(n)
 
 print(p)
