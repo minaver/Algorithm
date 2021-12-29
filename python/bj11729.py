@@ -12,10 +12,10 @@ def hanoi(N,a,b,c):
     return 
 
   else: 
-    hanoi(N-1,a,c,b)
+    hanoi(N-1,a,c,b) # 출발지 a -> 경유지 c -> 도착지 b
     print(a,c)
-    hanoi(N-1,b,a,c)
+    hanoi(N-1,b,a,c) # 출발지 b -> 경유지 a -> 도착지 c
 
 N = int(input())
-print(2**N-1)
+print(2**N-1) # N개의 블록 존재시 옮기는 전체 횟수  
 hanoi(N,1,2,3)
