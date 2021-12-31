@@ -5,5 +5,6 @@ def factorial(n):
     fac = n * factorial(n-1)
   return fac
 
-N = 
+N = int(input())
+factorial(N)
 
